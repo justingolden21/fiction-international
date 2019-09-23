@@ -1,4 +1,4 @@
-<img src="assets/images/logo.png" width="64px">
+<img src="assets/images/fi-logo.png" width="64px">
 
 Fiction International Website Testing Grounds
 
