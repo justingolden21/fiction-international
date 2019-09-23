@@ -74,7 +74,7 @@
 	<div id="nav-icons-div">
 		<i id="search-icon-2" class="search-icon fas fa-search fa-2x"></i>
 		{% for item in site.data.social %}
-			<a title="{{ item.name }}" href="{{ item.url }}" target="_blank">
+			<a title="{{ item.name }}" class="social-link" href="{{ item.url }}" target="_blank">
 				<i class="{{ item.icon }} fa-2x social-icon"></i>
 			</a>
 		{% endfor %}

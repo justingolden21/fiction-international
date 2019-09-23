@@ -46,6 +46,10 @@ img, button, br {
 	color: #A90808 !important;
 }
 
+.social-link:hover {
+	text-decoration: none;
+}
+
 .social-icon, .search-icon {
 	font-size: 24px !important;
 	color: #fff;
