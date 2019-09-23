@@ -2,7 +2,10 @@
 #A90808
 */
 * {
-	/*font-family: Times;*/
+	font-family: 'Lora', serif;
+	font-family: 'Josefin Sans', sans-serif;
+	/*font-family: 'Abril Fatface', cursive;*/
+	/*font-family: 'Amatic SC', cursive;*/
 }
 img, button, br {
 	-webkit-user-select: none; /* Safari */
