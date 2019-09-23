@@ -11,13 +11,13 @@ $( ()=> {
 	});
 
 	$('.search-icon').click( ()=> {
-		$('#search-form').css('display', 'inline');
+		$('#search-form').animate({width:'toggle'}, 300);
 		$('#search-close').css('display', 'inline');
 	});
 
 	$('#search-close').click( ()=> {
-		$('#search-form').css('display', '');
-		$('#search-close').css('display', '');		
+		$('#search-form').animate({width:'toggle'}, 0);
+		$('#search-close').css('display', '');
 	});
 
 });
