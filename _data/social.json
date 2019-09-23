@@ -1,0 +1,12 @@
+[
+	{
+		"name": "Facebook",
+		"url": "https://www.facebook.com/FictIntl/",
+		"icon": "fab fa-facebook"
+	},
+	{
+		"name": "Twitter",
+		"url": "https://twitter.com/fictintl",
+		"icon": "fab fa-twitter"
+	}
+]

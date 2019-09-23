@@ -1,0 +1,90 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" role="navigation">
+	<a id="home-img" class="navbar-brand" href="#">
+		<img
+
+			src="{{ site.baseurl }}/assets/images/fi-logo-white.png"
+
+		{% if page.active!='Home' %}
+			onclick="window.open('{{ site.baseurl }}/index.html', '_self');"
+		{% endif %}
+		width="256px">
+	</a>
+
+	<i id="search-icon-1" class="search-icon fas fa-search fa-2x"></i>
+
+<!-- 	{% if page.active!='Home'%}
+		<b style="color:#fff">{{page.title}}</b>
+	{% endif %} -->
+
+<!-- 	<form class="form-inline ml-auto">
+		<div class="input-group">
+			<input id="search" class="form-control" type="search" placeholder="Search our issues..." aria-label="Search">
+			<div class="input-group-append">
+				<button class="btn btn-light" type="submit" title="Search"><i class="fas fa-search"></i></button>
+			</div>
+		</div>
+	</form> -->
+
+	<button id="menu-btn" class="navbar-toggler navbar-dark" type="button" title="Menu" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+		<i id="menu-icon" class="fas fa-bars"></i>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbar-content">
+		<ul class="navbar-nav mr-auto">
+
+			<li class="nav-item">
+				<a class="nav-link {% if page.active=='Home' %} active {% endif %}"
+				{% if page.active!='Home' %}
+					href="{{ site.baseurl }}/index.html"
+				{% endif %}
+				>Home</a>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link {% if page.active=='About' %} active {% endif %} dropdown-toggle" href="#" id="about-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				About
+				</a>
+				<div class="dropdown-menu" aria-labelledby="about-dropdown">
+					<a class="dropdown-item" href="{{ site.baseurl }}/about.html">About the Journal</a>
+					<a class="dropdown-item" href="#">Masthead</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Submit</a>
+				</div>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link {% if page.active=='Catalog' %} active {% endif %}"
+					href="{{ site.baseurl }}/catalog.html">Catalog</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link {% if page.active=='Subscribe' %} active {% endif %}"
+					href="{{ site.baseurl }}/subscribe.html">Subscribe</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link {% if page.active=='Blog' %} active {% endif %}"
+					href="{{ site.baseurl }}/blog.html">Blog</a>
+			</li>
+
+		</ul>
+
+	</div>
+
+	<div id="nav-icons-div">
+		<i id="search-icon-2" class="search-icon fas fa-search fa-2x"></i>
+		{% for item in site.data.social %}
+			<a title="{{ item.name }}" href="{{ item.url }}" target="_blank">
+				<i class="{{ item.icon }} fa-2x social-icon"></i>
+			</a>
+		{% endfor %}
+	</div>
+
+</nav>
+
+{% if page.title %}
+	<div class="jumbotron text-center">
+		
+	<h1><br><b> {{ page.title }} </b></h1>
+	</div>
+{% endif %}

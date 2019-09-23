@@ -1,0 +1,1 @@
+change logo color to #A90808 in .ai file
