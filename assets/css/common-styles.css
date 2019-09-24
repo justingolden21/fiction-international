@@ -80,6 +80,16 @@ img, button, br {
 }
 
 
+.dropdown-menu {
+	border: 1px solid #333;
+}
+.dropdown-item {
+	padding: 10px;
+}
+.dropdown-item:hover {
+	background-color: #ccc;
+}
+
 
 /*#nav-icons-div {}*/
 
