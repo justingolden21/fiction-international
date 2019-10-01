@@ -1,0 +1,44 @@
+---
+layout: default-layout
+title: Catalog
+active: Catalog
+permalink: catalog
+---
+
+<!-- 
+https://jekyllrb.com/docs/collections/ 
+https://jekyllrb.com/docs/step-by-step/09-collections/ 
+https://alligator.io/jekyll/collections/
+
+https://talk.jekyllrb.com/t/solved-pages-from-collection-list-are-not-render/1059/4
+
+catalog.html
+bodyy.md
+_config.yml
+issue.html
+-->
+
+<div id="main-section">
+	<h3>Issue Catalog</h3>
+
+	<div class="row">
+		<div class="col-md-4 col-sm-6">
+			{% for issue in site.issues %}
+				
+				<h2>Issue #{{ issue.num }}</h2>
+
+				<img src="../assets/images/covers/{{ issue.img }}" width="120px">
+
+				<a href="{{ site.url }}{{ site.baseurl }}{{ issue.url }}.html">
+								<h2>{{ issue.name }}</h2>
+
+				</a>
+
+
+				</h2>
+				<p>{{ issue.summary | markdownify }}</p>
+			{% endfor %}
+		</div>
+	</div>
+
+</div>

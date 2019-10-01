@@ -4,3 +4,20 @@ baseurl: "."
 url: ""
 markdown: kramdown
 include: [_data]
+
+collections:
+  issues:
+    ouput: true
+    # sort_by: num
+    permalink: /issues/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "issues"
+    values:
+      layout: "issue"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
