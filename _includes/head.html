@@ -1,13 +1,12 @@
 <head>
-
+<meta charset="utf-8">
 <title>
-	{{ site.title }}
-	{% if page.title %}
-		- {{ page.title }}
-	{% endif %}
+  {{ site.title }}
+  {% if page.title %}
+    - {{ page.title }}
+  {% endif %}
 </title>
 
-<meta charset="utf-8">
 <meta name="title=" content="Fiction International">
 <meta name="robots" content="index, follow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,14 +23,16 @@
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Josefin+Sans|Lora&display=swap" rel="stylesheet">
 
-<!-- CDNs: jquery, fontawesome, bootstrap -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- CDNs: jquery, fontawesome, bootstrap
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+-->
 
 <!-- local links -->
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/common-styles.css">
-<script async type="text/javascript" src="{{ site.baseurl }}/assets/js/common-scripts.js"></script>
+<link rel="stylesheet" href="{{'assets/css/common-styles.css' | relative_url }}">
+<script async type="text/javascript" src="{{ 'assets/js/common-scripts.js' | relative_url }}"></script>
 
 </head>

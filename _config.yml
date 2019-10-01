@@ -1,15 +1,12 @@
 title: Fiction International
 # change baseurl to "" for serve and "." for build
-baseurl: "."
+baseurl: ""
 url: ""
-markdown: kramdown
-include: [_data]
 
 collections:
   issues:
-    ouput: true
+    output: true
     # sort_by: num
-    permalink: /issues/:name
 
 defaults:
   - scope:

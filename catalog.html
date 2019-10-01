@@ -2,7 +2,6 @@
 layout: default-layout
 title: Catalog
 active: Catalog
-permalink: catalog
 ---
 
 <!-- 
@@ -19,26 +18,19 @@ issue.html
 -->
 
 <div id="main-section">
-	<h3>Issue Catalog</h3>
+  <h2 style="margin-bottom:35px;padding-bottom:3px;border-bottom:1px solid #ccc">Issue Catalog</h2>
 
-	<div class="row">
-		<div class="col-md-4 col-sm-6">
-			{% for issue in site.issues %}
-				
-				<h2>Issue #{{ issue.num }}</h2>
-
-				<img src="../assets/images/covers/{{ issue.img }}" width="120px">
-
-				<a href="{{ site.url }}{{ site.baseurl }}{{ issue.url }}.html">
-								<h2>{{ issue.name }}</h2>
-
-				</a>
-
-
-				</h2>
-				<p>{{ issue.summary | markdownify }}</p>
-			{% endfor %}
-		</div>
-	</div>
-
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      {% for issue in site.issues %}
+        <h3>
+          <a href="{{ issue.url | relative_url }}">
+            Issue #{{ issue.num }}
+          </a>: <span>{{ issue.title }}</span>
+        </h3>
+        <p>{{ issue.summary | markdownify }}</p>
+        <hr/>
+      {% endfor %}
+    </div>
+  </div>
 </div>
