@@ -1,11 +1,40 @@
 ---
-layout: default
+active: Issue
 ---
-<h1>{{ page.num }}</h1>
-<h2>{{ page.issue_name }}</h2>
-<img src="../assets/images/covers/{{ page.img }}">
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+{% include header.html %}
 
-<br>
-hello
+<link rel="stylesheet" type="text/css" href="../assets/css/issue-styles.css">
 
-{{ content }}
+
+<div id="main-section">
+
+	<h1 class="page-title">Issue {{ page.num }} : {{ page.title }}</h1>
+
+	<!-- <p>{{ page.summary }}</p> -->
+
+	<hr>
+
+	<div class="row">
+		<div class="col-md-8">
+			<p>{{ page.date_published }}</p>
+			<p>ISBN: {{ page.isbn }}</p>
+			<p><a href="{{ page.amazon }}">Purchase {{ page.title }} on Amazon</a></p>
+		</div>
+		<div class="col-md-4">
+			<img class="issue-cover" src="../assets/images/covers/{{ page.img }}" width="240px">
+		</div>
+	</div>
+
+	<p>
+	{{ content }}
+	</p>
+
+</div>
+
+{% include footer.html %}
+</body>
+</html>

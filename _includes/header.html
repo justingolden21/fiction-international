@@ -1,15 +1,16 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" role="navigation">
 	<a id="home-img" class="navbar-brand" href="#">
-		<img
-
-			src="{{ site.baseurl }}/assets/images/fi-logo-white.png"
-
+		<img src="{{ './assets/images/fi-logo-white.png' | prepend: site.baseurl }}"
 		{% if page.active!='Home' %}
-			onclick="window.open('{{ site.baseurl }}/index.html', '_self');"
+
+			onclick="window.open('{{ '/index.html' | prepend: site.baseurl }}', '_self');"
 		{% endif %}
 		width="256px">
 	</a>
 
+<!-- 			onclick="window.open('{{ site.baseurl }}/index.html', '_self');"
+			onclick="window.open('{{ './index.html' | prepend: site.baseurl }}', '_self');"
+			onclick="window.open('{{ 'index.html' | prepend: site.baseurl }}', '_self');" -->
 
 	<i id="search-close" class="hidden fas fa-times fa-2x"></i>
 
