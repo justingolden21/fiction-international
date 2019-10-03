@@ -1,0 +1,29 @@
+---
+layout: default-layout
+title: Issue Catalog
+active: Catalog
+permalink: catalog
+---
+
+<link rel="stylesheet" type="text/css" href="assets/css/catalog-styles.css">
+
+<div id="main-section">
+
+	<div class="row">
+		
+		{% for issue in site.issues %}
+			<div class="col-md-4 col-sm-6">
+				<h2>Issue #{{ issue.num }}</h2>
+
+				<img class="issue-cover" onclick="window.open('{{ site.url }}{{ site.baseurl }}{{ issue.url }}.html')" 
+				 src="../assets/images/covers/{{ issue.img }}" width="120px">
+
+				<h2>{{ issue.title }}</h2>
+
+				<!-- <p>{{ issue.summary | markdownify }}</p> -->
+			</div>
+		{% endfor %}
+		
+	</div>
+
+</div>

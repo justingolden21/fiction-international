@@ -26,10 +26,18 @@ img, button, br {
 
 .jumbotron {
 	margin-top: 20px;
+	background-image: url('../images/circles.jpg');
+	filter:brightness(200%);
+	color: #fff;
+	background-size: cover;
 }
 #main-section {
 	margin: 50px;
 	margin-top: 150px;
+}
+.page-title {
+	font-size: 150%;
+	text-align: center;
 }
 
 /* nav */
