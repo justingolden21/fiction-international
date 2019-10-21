@@ -21,3 +21,11 @@
 	color: #fff;
 	/*text-shadow: 1px 1px 1px #fff;*/
 }
+#body-btn {
+	background-color: #A90808;
+	color: #fff;
+	border-radius: 20px;
+}
+#body-btn:hover {
+	text-decoration: underline;
+}
