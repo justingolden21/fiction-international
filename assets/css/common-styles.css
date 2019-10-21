@@ -25,7 +25,8 @@ img, button, br {
 }
 
 .jumbotron {
-	margin-top: 20px;
+	padding-top: 120px;
+	border-radius: 0;
 	background-image: url('../images/circles.jpg');
 	filter:brightness(200%);
 	color: #fff;
@@ -33,7 +34,6 @@ img, button, br {
 }
 #main-section {
 	margin: 50px;
-	margin-top: 150px;
 }
 .page-title {
 	font-size: 150%;
@@ -73,7 +73,7 @@ img, button, br {
 	width: 36px;
 	transition: color 0.2s linear;
 }
-.social-icon:hover, .search-icon:hover, #search-close:hover, .dropdown-item:hover {
+a, a:hover, .social-icon:hover, .search-icon:hover, #search-close:hover, .dropdown-item:hover {
 	color: #A90808;
 }
 .search-icon {
