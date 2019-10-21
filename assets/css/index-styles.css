@@ -27,5 +27,6 @@
 	border-radius: 20px;
 }
 #body-btn:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	box-shadow: 4px 4px 1px #ccc;
 }
