@@ -8,5 +8,10 @@
 		"name": "Twitter",
 		"url": "https://twitter.com/fictintl",
 		"icon": "fab fa-twitter"
+	},
+	{
+		"name": "Email",
+		"url": "mailto:fictioninternational@gmail.com",
+		"icon": "fas fa-envelope"
 	}
 ]
