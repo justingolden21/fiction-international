@@ -1,0 +1,22 @@
+#main-section {
+	background-image: url('https://fictioninternational.sdsu.edu/wordpress/wp-content/uploads/Chengdu-Olaya-Barr.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 578px;
+	margin: 0;
+	margin-top: 110px;
+	padding-top: 100px;
+}
+#inner-div {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+#main-section h1 {
+	font-size: 400%;
+	color: #fff;
+	text-shadow: 2px 2px 1px #A90808;
+}
+#main-section h3 {
+	font-size: 300%;
+	color: #A90808;
+	text-shadow: 1px 1px 1px #fff;
+}

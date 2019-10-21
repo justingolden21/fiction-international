@@ -43,33 +43,48 @@
 				{% if page.active!='Home' %}
 					href="{{ site.baseurl }}/index.html"
 				{% endif %}
-				><i class="fas fa-home"></i> Home</a>
+				>
+				<!-- <i class="fas fa-home"></i>  -->
+				Home</a>
 			</li>
 
 			<li class="nav-item dropdown">
 				<a class="nav-link {% if page.active=='About' %} active {% endif %} dropdown-toggle" href="#" id="about-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<i class="fas fa-info"></i> About
+				<!-- <i class="fas fa-info"></i>  -->
+				About
 				</a>
 				<div class="dropdown-menu" aria-labelledby="about-dropdown">
-					<a class="dropdown-item" href="{{ site.baseurl }}/about.html"><i class="fas fa-book-open"></i> About the Journal</a>
-					<a class="dropdown-item" href="#"><i class="fas fa-users"></i> Masthead</a>
-					<a class="dropdown-item" href="#"><i class="fas fa-paper-plane"></i> Submit</a>
+					<a class="dropdown-item" href="{{ site.baseurl }}/about.html">
+						<!-- <i class="fas fa-book-open"></i>  -->
+					About the Journal</a>
+					<a class="dropdown-item" href="#">
+						<!-- <i class="fas fa-users"></i>  -->
+					Masthead</a>
+					<a class="dropdown-item" href="#">
+						<!-- <i class="fas fa-paper-plane"></i>  -->
+					Submit</a>
 				</div>
 			</li>
 
 			<li class="nav-item">
 				<a class="nav-link {% if page.active=='Catalog' %} active {% endif %}"
-					href="{{ site.baseurl }}/catalog.html"><i class="fas fa-book"></i> Catalog</a>
+					href="{{ site.baseurl }}/catalog.html">
+					<!-- <i class="fas fa-book"></i>  -->
+				Catalog</a>
 			</li>
 
 			<li class="nav-item">
 				<a class="nav-link {% if page.active=='Subscribe' %} active {% endif %}"
-					href="{{ site.baseurl }}/subscribe.html"><i class="fas fa-heart"></i> Subscribe</a>
+					href="{{ site.baseurl }}/subscribe.html">
+					<!-- <i class="fas fa-heart"></i>  -->
+				Subscribe</a>
 			</li>
 
 			<li class="nav-item">
 				<a class="nav-link {% if page.active=='Blog' %} active {% endif %}"
-					href="{{ site.baseurl }}/blog.html"><i class="fas fa-glasses"></i> Blog</a>
+					href="{{ site.baseurl }}/blog.html">
+					<!-- <i class="fas fa-glasses"></i>  -->
+				Blog</a>
 			</li>
 
 		</ul>
