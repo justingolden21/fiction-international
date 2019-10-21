@@ -7,12 +7,6 @@
 	/*font-family: 'Abril Fatface', cursive;*/
 	/*font-family: 'Amatic SC', cursive;*/
 }
-html {
-	background-color: #ccc;
-}
-.navbar {
-	background-color: #333 !important;
-}
 img, button, br {
 	-webkit-user-select: none; /* Safari */
 	-moz-user-select: none; /* Firefox */
@@ -48,6 +42,7 @@ img, button, br {
 
 /* nav */
 .navbar {
+	background-color: #333 !important;
 	padding: 0px;
 	margin: 20px;
 	border-radius: 20px;
