@@ -28,9 +28,10 @@ img, button, br {
 	padding-top: 120px;
 	border-radius: 0;
 	background-image: url('../images/circles.jpg');
-	filter:brightness(200%);
-	color: #fff;
+	/*filter:brightness(200%);*/
 	background-size: cover;
+	background-position: center;
+	color: #fff;
 }
 #main-section {
 	margin: 50px;
