@@ -1,0 +1,25 @@
+---
+layout: default-layout
+title: Masthead
+active: Masthead
+permalink: masthead
+---
+
+<div id="main-section">
+	<h3></h3>
+	<p></p>
+
+	<div class="row">
+	{% for item in site.data.people %}
+	<div class="col-md-4">
+		<img src="{{ site.baseurl }}/assets/images/people/{{ item.image }}" width="200px">
+	</div>
+	<div class="col-md-8">
+		<h5>{{ item.name }}</h5>
+		<hr>
+		<p>{{ item.text }}</p>
+	</div>
+	<div class="col-12"><hr></div>
+	{% endfor %}
+	</div>
+</div>
