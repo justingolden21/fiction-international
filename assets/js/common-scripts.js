@@ -11,8 +11,10 @@ $( ()=> {
 	});
 
 	$('.search-icon').click( ()=> {
-		$('#search-form').animate({width:'toggle'}, 300);
-		$('#search-close').css('display', 'inline');
+		if($('#search-close').css('display') != 'block') {
+			$('#search-form').animate({width:'toggle'}, 300);
+			$('#search-close').css('display', 'block');
+		}
 	});
 
 	$('#search-close').click( ()=> {
