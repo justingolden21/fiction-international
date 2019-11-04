@@ -1,6 +1,6 @@
 title: Fiction International
 # change baseurl to "" for serve and "." for build
-baseurl: "."
+baseurl: "https://justingolden21.github.io/fiction-international/"
 url: ""
 markdown: kramdown
 include: [_data]
