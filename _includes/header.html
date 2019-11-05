@@ -2,6 +2,7 @@
 	<a id="home-img" class="navbar-brand" href="#">
 		<!-- <img src="{{ './assets/images/fi-logo-white-simple.png' | prepend: site.baseurl }}" -->
 		<img src="{{site.baseurl}}/assets/images/fi-logo-white-simple.png"
+		onerror="this.src='../assets/images/fi-logo-white-simple.png'" 
 		{% if page.active!='Home' %}
 
 			onclick="window.open('{{ '/index.html' | prepend: site.baseurl }}', '_self');"
