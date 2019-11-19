@@ -10,8 +10,9 @@ permalink: catalog
 <div id="main-section">
 
 	<div class="row">
-		
-		{% for issue in site.issues %}
+
+		{% assign sorted = site.issues | sort:"num" | reverse %}
+		{% for issue in sorted %}
 			<div class="col-md-4 col-sm-6">
 				<h2>Issue #{{ issue.num }}</h2>
 

@@ -1,7 +1,6 @@
 ---
 title: World in Pain
 num: 51
-<!-- summary: world in pain is coo -->
 img: 51.png
 date_published: Fall 2018
 isbn: 978-0931362156

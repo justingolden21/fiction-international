@@ -1,7 +1,6 @@
 ---
 title: Body
 num: 52
-<!-- summary: body is coo -->
 img: 52.png
 date_published: Fall 2019
 isbn: 978-0-931362-16-3
