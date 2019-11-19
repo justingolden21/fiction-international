@@ -2,7 +2,8 @@
 title: The Artist in Wartime
 num: 42
 img: 42.jpg
-date_published: Fall 2010
+date_published: Fall 2009
+<!-- corrected from 2010 -->
 isbn: 1-879691-80-9
 amazon: NONE
 ---
