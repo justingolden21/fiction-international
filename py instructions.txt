@@ -1,0 +1,2 @@
+file generated is invalid utf-8 for some reason, simply copy content in existing file into new file 
+and then replace it by coping newly generated file's text inside and save and replace

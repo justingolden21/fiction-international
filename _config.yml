@@ -1,7 +1,6 @@
 title: Fiction International
-# change baseurl to "" for serve and "." for build
-# baseurl: "C:/Users/Justin/Documents/GitHub/fiction-international/_site"
-baseurl: "."
+# baseurl: "C:/Users/Justin/Documents/GitHub/fiction-international/_site" # for local build
+baseurl: "." # for hosting and serving
 url: ""
 markdown: kramdown
 include: [_data]
