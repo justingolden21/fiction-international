@@ -20,8 +20,8 @@ while True:
 	file_txt = ''
 	file_txt += '---\n'
 	file_txt += 'title: ' + title_name + '\n'
-	file_txt += 'num: ' + issue_num + '\n'
-	file_txt += 'img: ' + issue_num.replace('.','_') + '.jpg\n'
+	file_txt += 'num: ' + issue_num.replace('.','_').split('/')[0] + '\n'
+	file_txt += 'img: ' + issue_num.replace('.','_').split('/')[0] + '.jpg\n'
 	file_txt += 'date_published: ' + date_published + '\n'
 	file_txt += 'isbn: ' + isbn + '\n'
 	file_txt += 'amazon: NONE\n'
@@ -29,7 +29,10 @@ while True:
 	file_txt += '\nContent\n\n'
 	file_txt += content.replace('\n', '\n\n').replace('“', '"').replace('”', '"').replace('’', '\'')
 
-	file = open("_issues/" + title_name.lower().replace('/','').replace(' ','').replace('.','_') + ".md", "w")
+	file_str = "_issues/" + title_name.lower().replace('/','').replace(' ','').replace('.','_') + ".md"
+	while(path.exists(file_str) ):
+		file_str += '1'
+	file = open(file_str, "w")
 	file.write(file_txt)
 	file.close()
 

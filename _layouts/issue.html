@@ -28,7 +28,9 @@ active: Issue
 
 	<div class="row">
 		<div class="col-md-8">
+			{% if page.date_published != "NONE" %}
 			<p>{{ page.date_published }}</p>
+			{% endif %}
 			{% if page.isbn != "NONE" %}
 			<p>ISBN: {{ page.isbn }}</p>
 			{% endif %}
