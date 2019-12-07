@@ -29,7 +29,9 @@ active: Issue
 	<div class="row">
 		<div class="col-md-8">
 			<p>{{ page.date_published }}</p>
+			{% if page.isbn != "NONE" %}
 			<p>ISBN: {{ page.isbn }}</p>
+			{% endif %}
 			{% if page.amazon != "NONE" %}
 			<p><a href="{{ page.amazon }}">Purchase {{ page.title }} on Amazon</a></p>
 			{% endif %}
