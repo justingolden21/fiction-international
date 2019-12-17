@@ -3,7 +3,7 @@ title: Fetish
 num: 35
 img: 35.jpg
 date_published: Fall 2002
-isbn: NONE
+isbn: 1-879691-66-3
 amazon: NONE
 ---
 
