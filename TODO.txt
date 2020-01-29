@@ -1,3 +1,4 @@
 change logo color to #A90808 in .ai file
 
 fix links
+fix links from indivudal issue page to pages in header
